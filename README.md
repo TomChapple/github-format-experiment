@@ -1,5 +1,9 @@
 # GitHub Format Experiment
 
+> [!WARNING]
+> This repository has been archived as I have found the answer to my questions.
+> This is being kept for reference purposes.
+
 I am curious how the "format" function works with more parameters than slots in
 the template string.
 
