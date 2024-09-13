@@ -1,0 +1,18 @@
+name: Format Experiment
+on: [workflow_dispatch]
+jobs:
+  format-basic:
+    name: Simple "format" use case
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo ${{ format('{0}, {1}!', 'Hello', 'World') }}
+  format-excess:
+    name: Excess paramaters in "format"
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo ${{ format('{2}/{3}', 'White', 'Blue', 'Black', 'Red', 'Green') }}
+  format-not-enough:
+    name: Not enough parameters in "format"
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo ${{ format('{0} and {1}, but {2}', 'One', 'Two') }}
